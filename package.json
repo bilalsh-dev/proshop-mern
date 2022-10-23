@@ -1,0 +1,22 @@
+{
+  "name": "proshop-mern",
+  "version": "1.0.0",
+  "description": "MERN shopping cart",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalsahid929/proshop-mern.git"
+  },
+  "author": "Bilal Shahid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilalsahid929/proshop-mern/issues"
+  },
+  "homepage": "https://github.com/bilalsahid929/proshop-mern#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
