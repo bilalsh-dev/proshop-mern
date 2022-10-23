@@ -1,5 +1,8 @@
-const express = require("express");
-const products = require("./data/products");
+import express from "express";
+import dotenv from "dotenv";
+import products from "./data/products.js";
+
+dotenv.config();
 
 const app = express();
 
@@ -22,6 +25,10 @@ app.get("/:universalURL", (req, res) => {
   res.send("404 URL NOT FOUND");
 });
 
-app.listen(5000, () => {
-  console.log("listening on http://localhost:3000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(
+    `Server running in ${process.env.NODE_Env} mode on http://localhost:${PORT}`
+  );
 });
